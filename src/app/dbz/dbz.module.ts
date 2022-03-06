@@ -25,4 +25,11 @@ import { DbzService } from './services/dbz.service';
     DbzService
   ]
 })
-export class DbzModule { }
+export class DbzModule { 
+  initialize(){
+    console.log('App Working');
+  }
+  constructor(){
+    this.initialize();
+  }
+}
